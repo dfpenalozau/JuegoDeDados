@@ -8,7 +8,7 @@ public class Grafica extends javax.swing.JPanel {
     public Grafica() {
         initComponents();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -24,6 +24,12 @@ public class Grafica extends javax.swing.JPanel {
         EtiquetaMensaje = new javax.swing.JLabel();
 
         BotonLanzar.setText("LANZAR");
+
+        Apuesta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApuestaMouseClicked(evt);
+            }
+        });
 
         EtiquetaApuesta.setText("APUESTA");
 
@@ -77,6 +83,11 @@ public class Grafica extends javax.swing.JPanel {
                     .addComponent(EtiquetaMensaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ApuestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApuestaMouseClicked
+    
+    
+    }//GEN-LAST:event_ApuestaMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
