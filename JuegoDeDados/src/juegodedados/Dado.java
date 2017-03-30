@@ -1,3 +1,5 @@
+package juegodedados;
+
 public class Dado {
 
     int Valor1;
