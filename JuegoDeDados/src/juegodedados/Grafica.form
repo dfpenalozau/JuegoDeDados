@@ -23,40 +23,40 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+          <Component id="Separador1" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton1" max="32767" attributes="0"/>
+                  <Component id="BotonAceptar" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="EtiquetaDado1" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField1" pref="262" max="32767" attributes="0"/>
+                      <Component id="TextoDado1" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel2" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="EtiquetaDado2" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField2" max="32767" attributes="0"/>
+                      <Component id="TextoDado2" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel4" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                              <Component id="jLabel3" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="EtiquetaBilleta" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="EtiquetaApuesta" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel5" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="EtiquetaMensaje" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextField3" max="32767" attributes="0"/>
-                          <Component id="jTextField4" max="32767" attributes="0"/>
-                          <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="TextoApuesta" max="32767" attributes="0"/>
+                          <Component id="TextoBilletera" pref="262" max="32767" attributes="0"/>
+                          <Component id="TextoMensaje" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
+          <Component id="Separador2" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -64,89 +64,120 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jTextField1" pref="30" max="32767" attributes="0"/>
-                  <Component id="jLabel1" max="32767" attributes="0"/>
+                  <Component id="TextoDado1" pref="30" max="32767" attributes="0"/>
+                  <Component id="EtiquetaDado1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jLabel2" pref="30" max="32767" attributes="0"/>
-                  <Component id="jTextField2" max="32767" attributes="0"/>
+                  <Component id="EtiquetaDado2" pref="30" max="32767" attributes="0"/>
+                  <Component id="TextoDado2" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="Separador1" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="TextoApuesta" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="EtiquetaApuesta" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="TextoBilletera" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="EtiquetaBilleta" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="TextoMensaje" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="EtiquetaMensaje" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="Separador2" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="BotonAceptar" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="EtiquetaDado1">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="DADO 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="EtiquetaDado2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="DADO 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="TextoDado1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TextoDado1MouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="TextoDado2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TextoDado2MouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    <Component class="javax.swing.JSeparator" name="Separador1">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="EtiquetaApuesta">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="APUESTA"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="EtiquetaBilleta">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="BILLETERA"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="EtiquetaMensaje">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="MENSAJE"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="TextoApuesta">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="TextoBilletera">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="10000"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TextoBilleteraMouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="TextoMensaje">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TextoMensajeMouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="BotonAceptar">
       <Properties>
         <Property name="text" type="java.lang.String" value="ACEPTAR"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonAceptarMouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator2">
+    <Component class="javax.swing.JSeparator" name="Separador2">
     </Component>
   </SubComponents>
 </Form>

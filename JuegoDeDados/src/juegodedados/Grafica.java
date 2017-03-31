@@ -1,19 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package juegodedados;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author famy
  */
 public class Grafica extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Grafica
-     */
+    Dado Dado=new Dado();
+    Usuario Usuario=new Usuario();
+    public int SumaDados;
     public Grafica() {
         initComponents();
     }
@@ -27,104 +24,229 @@ public class Grafica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jSeparator2 = new javax.swing.JSeparator();
+        EtiquetaDado1 = new javax.swing.JLabel();
+        EtiquetaDado2 = new javax.swing.JLabel();
+        TextoDado1 = new javax.swing.JTextField();
+        TextoDado2 = new javax.swing.JTextField();
+        Separador1 = new javax.swing.JSeparator();
+        EtiquetaApuesta = new javax.swing.JLabel();
+        EtiquetaBilleta = new javax.swing.JLabel();
+        EtiquetaMensaje = new javax.swing.JLabel();
+        TextoApuesta = new javax.swing.JTextField();
+        TextoBilletera = new javax.swing.JTextField();
+        TextoMensaje = new javax.swing.JTextField();
+        BotonAceptar = new javax.swing.JButton();
+        Separador2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("DADO 1");
+        EtiquetaDado1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaDado1.setText("DADO 1");
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("DADO 2");
+        EtiquetaDado2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaDado2.setText("DADO 2");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("APUESTA");
+        TextoDado1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextoDado1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TextoDado1MouseClicked(evt);
+            }
+        });
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("BILLETERA");
+        TextoDado2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextoDado2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TextoDado2MouseClicked(evt);
+            }
+        });
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("MENSAJE");
+        EtiquetaApuesta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaApuesta.setText("APUESTA");
 
-        jButton1.setText("ACEPTAR");
+        EtiquetaBilleta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaBilleta.setText("BILLETERA");
+
+        EtiquetaMensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaMensaje.setText("MENSAJE");
+
+        TextoApuesta.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        TextoBilletera.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextoBilletera.setText("10000");
+        TextoBilletera.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TextoBilleteraMouseClicked(evt);
+            }
+        });
+
+        TextoMensaje.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextoMensaje.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TextoMensajeMouseClicked(evt);
+            }
+        });
+
+        BotonAceptar.setText("ACEPTAR");
+        BotonAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonAceptarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator1)
+            .addComponent(Separador1)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(BotonAceptar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EtiquetaDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE))
+                        .addComponent(TextoDado1))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EtiquetaDado2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField2))
+                        .addComponent(TextoDado2))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(EtiquetaBilleta, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(EtiquetaApuesta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(EtiquetaMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3)
-                            .addComponent(jTextField4)
-                            .addComponent(jTextField5))))
+                            .addComponent(TextoApuesta)
+                            .addComponent(TextoBilletera, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
+                            .addComponent(TextoMensaje))))
                 .addContainerGap())
-            .addComponent(jSeparator2)
+            .addComponent(Separador2)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(TextoDado1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(EtiquetaDado1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jTextField2))
+                    .addComponent(EtiquetaDado2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(TextoDado2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Separador1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextoApuesta, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EtiquetaApuesta, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextoBilletera, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EtiquetaBilleta, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextoMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EtiquetaMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BotonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BotonAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonAceptarMouseClicked
+        Dado.Lanzar();
+        this.TextoDado1.setText( String.valueOf(Dado.Valor1));
+        this.TextoDado2.setText( String.valueOf(Dado.Valor2));
+        SumaDados=Dado.Valor1+Dado.Valor2;
+        Usuario.Resultado=Float.parseFloat(TextoApuesta.getText());
+        
+        switch (SumaDados){  
+            
+            case 2:{  
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+            }break;
+            case 3:{  
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*2;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*2);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+            }break;
+            case 7:{  
+                Usuario.Billetera=Usuario.Billetera+Usuario.Resultado*2;
+                this.TextoMensaje.setText("HA GANADO: "+Usuario.Resultado*2);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+            }break;
+            case 11:{
+                this.TextoMensaje.setText("SU SALDO SIGUE IGUAL");
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+            }break;
+            case 12:{  
+                Usuario.Billetera=Usuario.Billetera+Usuario.Resultado;
+                this.TextoMensaje.setText("HA GANADO: "+Usuario.Resultado);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+            }break;
+            case 4:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+                
+            }break;
+            case 5:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+                
+            }break; 
+            case 6:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+                
+            }break; 
+            case 8:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText(String.valueOf(Usuario.Billetera));
+                
+            }break;
+            case 9:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText( String.valueOf(Usuario.Billetera));
+                
+            }break;
+            default:{
+                Usuario.Billetera=Usuario.Billetera-Usuario.Resultado*1.5;
+                this.TextoMensaje.setText("HA PERDIDO: "+Usuario.Resultado*1.5);
+                this.TextoBilletera.setText( String.valueOf(Usuario.Billetera));
+                
+            }break; 
+           
+        }
+    }//GEN-LAST:event_BotonAceptarMouseClicked
+
+    private void TextoDado1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextoDado1MouseClicked
+        JOptionPane.showMessageDialog(null,"NO PUEDE ESCRIBIR EN ESTE ESPACIO!");
+    }//GEN-LAST:event_TextoDado1MouseClicked
+
+    private void TextoDado2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextoDado2MouseClicked
+        JOptionPane.showMessageDialog(null,"NO PUEDE ESCRIBIR EN ESTE ESPACIO!");
+    }//GEN-LAST:event_TextoDado2MouseClicked
+
+    private void TextoBilleteraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextoBilleteraMouseClicked
+        JOptionPane.showMessageDialog(null,"NO PUEDE ESCRIBIR EN ESTE ESPACIO!");
+    }//GEN-LAST:event_TextoBilleteraMouseClicked
+
+    private void TextoMensajeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextoMensajeMouseClicked
+        JOptionPane.showMessageDialog(null,"NO PUEDE ESCRIBIR EN ESTE ESPACIO!");
+    }//GEN-LAST:event_TextoMensajeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -162,18 +284,18 @@ public class Grafica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JButton BotonAceptar;
+    private javax.swing.JLabel EtiquetaApuesta;
+    private javax.swing.JLabel EtiquetaBilleta;
+    private javax.swing.JLabel EtiquetaDado1;
+    private javax.swing.JLabel EtiquetaDado2;
+    private javax.swing.JLabel EtiquetaMensaje;
+    private javax.swing.JSeparator Separador1;
+    private javax.swing.JSeparator Separador2;
+    private javax.swing.JTextField TextoApuesta;
+    private javax.swing.JTextField TextoBilletera;
+    private javax.swing.JTextField TextoDado1;
+    private javax.swing.JTextField TextoDado2;
+    private javax.swing.JTextField TextoMensaje;
     // End of variables declaration//GEN-END:variables
 }
