@@ -11,11 +11,11 @@ package juegodedados;
  */
 public class JuegoDeDados {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+        Grafica miGrafica=new Grafica();
+        miGrafica.setVisible(true);
+          
     }
     
 }
